@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODM听力考试题</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            是否确认开始？
+        </div>
+        <div class="modal-footer">
+            <button class="modal-btn" onclick="startQuiz()">确认</button>
+            <button class="modal-btn" onclick="closeModal()">取消</button>
+        </div>
+    </div>
+</div>
+
+<div class="quiz-container" id="quiz-container">
+    <h1>CODM听力考试题</h1>
+    <div id="quiz"></div>
+    <div class="audio-controls" id="audioControls">
+    </div>
+    <div class="button-container">
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion()" style="display:none;">下一题</button>
+        <button id="retryButton" class="retry-btn" onclick="retryQuiz()" style="display:none;">再来一次</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
