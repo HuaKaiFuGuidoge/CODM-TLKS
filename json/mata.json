@@ -1,38 +1,94 @@
 {
     "bp50": {
-        "bp50": "bp50.MP3"
-    },
-    "BZ-AMR": {
-        "爆炸AMR": "BZ-AMR.MP3"
-    },
-    "DLQ33": {
-        "DLQ33": "DLQ33.MP3"
-    },
-    "JAK12": {
-        "JAK12": "JAK12.MP3"
-    },
-    "KRM262": {
-        "262小姐": "KRM262.MP3"
-    },
-    "LR-MOR": {
-        "铝热猛男": "LR-MOR.MP3"
+        "bp50": "bp50.MP3",
+        "type": "1"
     },
     "MG42": {
-        "MG42": "MG42.MP3"
-    },
-    "NA45": {
-        "爆炸狙": "NA45.MP3"
+        "MG42": "MG42.MP3",
+        "type": "1"
     },
     "type19": {
-        "Type19": "type19.MP3"
-    },
-    "type63": {
-        "Type63": "type63.MP3"
-    },
-    "USS9": {
-        "UZI": "USS9.MP3"
+        "Type19": "type19.MP3",
+        "type": "1"
     },
     "X9": {
-        "X9": "X9.MP3"
+        "Switchblade-X9": "SX9.MP3",
+        "type": "1"
+    },
+    "USS9": {
+        "UZI(USS9)": "USS9.MP3",
+        "type": "2"
+    },
+    "LR-MOR": {
+        "铝热猛男": "LR-MOR.MP3",
+        "type": "3"
+    },
+    "BZ-AMR": {
+        "爆炸AMR": "BZ-AMR.MP3",
+        "type": "JJ"
+    },
+    "DLQ33": {
+        "DLQ33": "DLQ33.MP3",
+        "type": "JJ"
+    },
+    "NA45": {
+        "爆炸狙": "NA45.MP3",
+        "type": "JJ"
+    },
+    "AMR": {
+        "AMR": "AMR.MP3",
+        "type": "JJ"
+    },
+    "HDR": {
+        "HDR": "HDR.MP3",
+        "type": "JJ"
+    },
+    "Koshka": {
+        "Koshka": "Koshka.MP3",
+        "type": "JJ"
+    },
+    "Locus": {
+        "Locus": "Locus.MP3",
+        "type": "JJ"
+    },
+    "lw3": {
+        "lw3": "lw3.MP3",
+        "type": "JJ"
+    },
+    "Outlaw": {
+        "Outlaw": "Outlaw.MP3",
+        "type": "JJ"
+    },
+    "ZRG20mm": {
+        "ZRG20mm": "ZRG20mm.MP3",
+        "type": "JJ"
+    },
+    ".50": {
+        ".50": ".50.MP3",
+        "type": "JJ"
+    },
+    "type63": {
+        "type63": "type63.MP3",
+        "type": "JJ-L"
+    },
+    "M21EBR": {
+        "M21EBR": "M21EBR.MP3",
+        "type": "JJ-L"
+    },
+    "SVD": {
+        "SVD": "SVD.MP3",
+        "type": "JJ-L"
+    },
+    "xpr50": {
+        "xpr50": "xpr50.MP3",
+        "type": "JJ-L"
+    },
+    "KRM262": {
+        "262小姐": "KRM262.MP3",
+        "type": "PZ"
+    },
+    "JAK12": {
+        "JAK12": "JAK12.MP3",
+        "type": "PZ-L"
     }
 }

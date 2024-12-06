@@ -11,7 +11,12 @@ async function loadQuestions() {
     while (questions.length < 10) {
         const randomKey = keys[Math.floor(Math.random() * keys.length)];
         if (!questions.some(q => q.key === randomKey)) {
-            questions.push({ key: randomKey, name: Object.keys(data[randomKey])[0], mp3: data[randomKey][Object.keys(data[randomKey])[0]] });
+            questions.push({ 
+                key: randomKey, 
+                name: Object.keys(data[randomKey])[0], 
+                mp3: data[randomKey][Object.keys(data[randomKey])[0]], 
+                type: data[randomKey].type 
+            });
         }
     }
 }
@@ -57,11 +62,23 @@ function loadQuestion() {
     `;
 
     let options = [question.name];
-    const allNames = questions.map(q => q.name);
+    const allQuestions = [...questions];
+    allQuestions.splice(currentQuestionIndex, 1);
+    
+    const sameTypeQuestions = allQuestions.filter(q => q.type === question.type && !options.includes(q.name));
+    const differentTypeQuestions = allQuestions.filter(q => q.type !== question.type && !options.includes(q.name));
+
     while (options.length < 4) {
-        const randomOption = allNames[Math.floor(Math.random() * allNames.length)];
-        if (!options.includes(randomOption)) {
+        if (sameTypeQuestions.length > 0) {
+            const randomIndex = Math.floor(Math.random() * sameTypeQuestions.length);
+            const randomOption = sameTypeQuestions[randomIndex].name;
             options.push(randomOption);
+            sameTypeQuestions.splice(randomIndex, 1);
+        } else if (differentTypeQuestions.length > 0) {
+            const randomIndex = Math.floor(Math.random() * differentTypeQuestions.length);
+            const randomOption = differentTypeQuestions[randomIndex].name;
+            options.push(randomOption);
+            differentTypeQuestions.splice(randomIndex, 1);
         }
     }
 
